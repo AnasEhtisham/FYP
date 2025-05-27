@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --primary: 151 51% 36%;
+    --primary-foreground: 211 100% 99%;
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+    --accent: 151 51% 36%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --ring: 151 51% 36%;
+    --radius: 0.5rem;
+    --chart-1: 151 51% 36%;
+    --chart-2: 207 90% 54%;
+    --chart-3: 45 93% 47%;
+    --chart-4: 338 85% 43%;
+    --chart-5: 240 60% 60%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 20 14.3% 4.1%;
+    --sidebar-primary: 151 51% 36%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 151 51% 5%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 20 5.9% 90%;
+    --sidebar-ring: 151 51% 36%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --primary: 151 51% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --accent: 151 51% 36%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --ring: 151 51% 36%;
+    --radius: 0.5rem;
+    --chart-1: 151 51% 36%;
+    --chart-2: 207 90% 54%;
+    --chart-3: 45 93% 47%;
+    --chart-4: 338 85% 43%;
+    --chart-5: 240 60% 60%;
+    --sidebar-background: 240 10% 3.9%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 151 51% 36%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 151 51% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 151 51% 36%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+.progress-bar {
+  @apply w-full bg-gray-200 dark:bg-gray-800 rounded-full h-2.5;
+}
+
+.progress-bar-fill {
+  @apply bg-primary h-2.5 rounded-full;
+}
